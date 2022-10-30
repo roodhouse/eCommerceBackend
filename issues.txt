@@ -1,0 +1,4 @@
+1. belongs to many not working
+2. check index.js
+3. try to create something and then retrieve it from the db
+4. what else according to the screenshots?

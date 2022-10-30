@@ -15,18 +15,20 @@ Category.hasMany(Product, {
   onDelete: 'CASCADE',
 });
 
-// Products belongToMany Tags (through ProductTag)
-Product.belongsToMany(ProductTag, {
-  foreignKey: 'tag_id',
-  onDelete: 'CASCADE',
-});
+// causing errors
 
-// Tags belongToMany Products (through ProductTag)
-Tag.belongsToMany(ProductTag, {
-  foreignKey: 'product_id',
-  onDelete: 'CASCADE',
+// // Products belongToMany Tags (through ProductTag)
+// Product.belongsToMany(ProductTag, {
+//   foreignKey: 'tag_id',
+//   onDelete: 'CASCADE',
+// });
 
-});
+// // Tags belongToMany Products (through ProductTag)
+// Tag.belongsToMany(ProductTag, {
+//   foreignKey: 'product_id',
+//   onDelete: 'CASCADE',
+
+// });
 
 
 module.exports = {
